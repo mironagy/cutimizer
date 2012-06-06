@@ -1,42 +1,42 @@
 package uniandes.cupi2.cutimizer.mundo;
 
 /**
- * Modela un item en una soluci�n dada
+ * Modela un ítem en una solución dada
  * 
  * @author jsierrajur
  */
 public class ItemSolucion {
 
 	/**
-	 * Si la orientaci�n es invertida en el item representado
+	 * Si la orientación es invertida en el ítem representado
 	 */
 	public static final int INVERTIDA = 1;
 	/**
-	 * Si la orientaci�n es igual a la del item representado
+	 * Si la orientación es igual a la del ítem representado
 	 */
 	public static final int ORIGINAL = 0;
 
 	/**
-	 * La posici�n x del item
+	 * La posición x del ítem
 	 */
 	private int x;
 
 	/**
-	 * La posici�n y del item
+	 * La posición y del ítem
 	 */
 	private int y;
 	/**
-	 * El item que representa la instancia
+	 * El ítem que representa la instancia
 	 */
 	private Item representado;
 
 	/**
-	 * La orientaci�n que se encuentra el item en el patr�n
+	 * La orientación que se encuentra el ítem en el patrón
 	 */
 	private int orientacion;
 
 	/**
-	 * Construye una nueva instancia con los par�metros dados
+	 * Construye una nueva instancia con los parámetros dados
 	 * 
 	 * @param x
 	 * @param y
@@ -50,35 +50,35 @@ public class ItemSolucion {
 	}
 
 	/**
-	 * Da la coordenada x del item
+	 * Da la coordenada x del ítem
 	 * 
-	 * @return la coordenada x del item
+	 * @return la coordenada x del ítem
 	 */
 	public int getCoordenadaX() {
 		return x;
 	}
 
 	/**
-	 * Da el Item que representa esta isntacia
+	 * Da el ítem que representa esta isntacia
 	 * 
-	 * @return el item representado
+	 * @return el ítem representado
 	 */
 	public Item getRepresentado() {
 		return representado;
 	}
 
 	/**
-	 * Asigna el item representado por esta instancia
+	 * Asigna el ítem representado por esta instancia
 	 * 
 	 * @param representado
-	 *            el item representado
+	 *            el ítem representado
 	 */
 	public void setRepresentado(Item representado) {
 		this.representado = representado;
 	}
 
 	/**
-	 * Da la coordenada y del item
+	 * Da la coordenada y del ítem
 	 * 
 	 * @return la coordenada y
 	 */
@@ -87,9 +87,9 @@ public class ItemSolucion {
 	}
 
 	/**
-	 * Da la orientaci�n del item dado
+	 * Da la orientación del ítem dado
 	 * 
-	 * @return la orientaci�n del item
+	 * @return la orientación del ítem
 	 */
 	public int darOrientacion() {
 		return orientacion;
@@ -99,17 +99,17 @@ public class ItemSolucion {
 	public String toString() {
 		String resumen;
 		if (orientacion == ORIGINAL)
-			resumen = "Item #" + representado.darID() + " de tama�o " + representado.getAncho() + "x"
+			resumen = "ítem #" + representado.darID() + " de tamaño " + representado.getAncho() + "x"
 					+ representado.getAlto() + "x"
-					+ representado.getEspesor() + " mm ubicado en la posici�n ("
-					+ getCoordenadaX() + "," + getCoordenadaY() + ") mm de la l�mina"
+					+ representado.getEspesor() + " mm ubicado en la posición ("
+					+ getCoordenadaX() + "," + getCoordenadaY() + ") mm de la lámina"
 					+ '\n';
 
 		else
-			resumen = "Item #" + representado.darID() + " de tama�o " + representado.getAlto() + "x"
+			resumen = "ítem #" + representado.darID() + " de tamaño " + representado.getAlto() + "x"
 					+ representado.getAncho() + "x"
-					+ representado.getEspesor() + " mm ubicado en la posici�n ("
-					+ getCoordenadaX() + "," + getCoordenadaY() + ") mm de la l�mina"
+					+ representado.getEspesor() + " mm ubicado en la posición ("
+					+ getCoordenadaX() + "," + getCoordenadaY() + ") mm de la lámina"
 					+ '\n';
 
 		return resumen;

@@ -89,7 +89,7 @@ public class InterfazCutimizer extends JFrame
         contenedor.addTab( "Soluciones", null, panelSolucion, null );
         add( contenedor, BorderLayout.CENTER );
 
-        
+        validate();
 	}
 
 	/**

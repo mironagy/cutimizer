@@ -127,9 +127,12 @@ public class InterfazSolucionConsola extends JFrame implements
 		divisionVertical = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,
 				panelLista, panelCentral);
 		this.add(divisionVertical, BorderLayout.CENTER);
+		
+		validate();
 	}
 
-	public void refrezcar() {
+	public void refrezcar(boolean borrar) {
+		System.out.println("entra");
 		DefaultMutableTreeNode nodo = (DefaultMutableTreeNode) listaPatrones
 				.getLastSelectedPathComponent();
 		if (nodo == null)
@@ -137,7 +140,8 @@ public class InterfazSolucionConsola extends JFrame implements
 
 
 		if (nodo.isLeaf()) {
-			panelDibujoPatron.borrar();
+			if(borrar)
+				panelDibujoPatron.borrar();
 			panelDibujoPatron.refrezcar();
 			Graphics2D lienzo = panelDibujoPatron.darLienzo();
 
@@ -149,15 +153,16 @@ public class InterfazSolucionConsola extends JFrame implements
 					+ patron.darIndicacionesDeCorte());
 		} else if (nodo.isRoot()) {
 			panelDibujoPatron.borrar();
-			panelDibujoPatron.dibujarSolucion();
+			panelDibujoPatron.dibujarPatronNoSeleccionado();
 			areaDescripcion.setText(solucion.toString());
 		}
+		
+		validate();
 	}
 
-	// Se llama dos veces cada vez que se hace click!
 	@Override
 	public void valueChanged(TreeSelectionEvent arg0) {
-		refrezcar();
+		refrezcar(true);
 	}
 
 }

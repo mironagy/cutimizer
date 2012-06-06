@@ -6,7 +6,7 @@ import java.util.Date;
 import uniandes.cupi2.cutimizer.mundo.interfaces.IPatron;
 
 /**
- * Modela una solución a un problema de optimizacíon
+ * Modela una soluciï¿½n a un problema de optimizacï¿½on
  * 
  * @author SIERRRA
  */
@@ -33,14 +33,14 @@ public class Solucion {
 	private ArrayList<IPatron> patrones;
 
 	/**
-	 * Crea una nueva solución
+	 * Crea una nueva soluciï¿½n
 	 * 
 	 * @param fecha
-	 *            la fecha de cuando fue ejecutada la solución
+	 *            la fecha de cuando fue ejecutada la soluciï¿½n
 	 * @param nombre
-	 *            el nombre de la solución
+	 *            el nombre de la soluciï¿½n
 	 * @param patrones
-	 *            la tupla patrones cantidad usados en la solución objetima
+	 *            la tupla patrones cantidad usados en la soluciï¿½n objetima
 	 */
 	public Solucion(Date fecha, String nombre, ArrayList<IPatron> patrones) {
 		this.fecha = fecha;
@@ -101,12 +101,12 @@ public class Solucion {
 
 	@Override
 	public String toString() {
-		String desc = "Solución " + nombre + " del " + fecha.toString() + '\n';
-		desc+= "Costo total de la solución " + darCosto()+ " de cortar "+ darNumeroLaminas()+ " láminas(s)"+ '\n'+ '\n';
+		String desc = "SoluciÃ³n " + nombre + " del " + fecha.toString() + '\n';
+		desc+= "Costo total de la soluciÃ³n " + darCosto()+ " de cortar "+ darNumeroLaminas()+ " lÃ¡mina(s)"+ '\n'+ '\n';
 		int contador = 1;
 		for (IPatron patron : patrones) {
 				desc += contador + ". Cortar " + patron.darCantidad()
-						+ " lamina(s) con el patrón " + patron.toString() + '\n';
+						+ " lamina(s) con el patrÃ³n " + patron.toString() + '\n';
 				contador++;
 		}
 
@@ -114,8 +114,8 @@ public class Solucion {
 	}
 
 	/**
-	 * Guarda las imagenes correspondientes a la solución en la ruta especificada
-	 * @param ruta la ruta donde se guardaran las imágenes
+	 * Guarda las imagenes correspondientes a la soluciï¿½n en la ruta especificada
+	 * @param ruta la ruta donde se guardaran las imï¿½genes
 	 * @throws IOException si existe un problema guardado las imagenes
 	 */
 	public void guardarImagenesSolucion(String ruta) throws IOException
@@ -131,9 +131,9 @@ public class Solucion {
 	
 	
 	/**
-	 * Da el número de láminas que se deben cortar en la solución original
+	 * Da el nï¿½mero de lï¿½minas que se deben cortar en la soluciï¿½n original
 	 * 
-	 * @return el número de láminas a cortar
+	 * @return el nï¿½mero de lï¿½minas a cortar
 	 */
 	public int darNumeroLaminas() {
 		int laminas = 0;

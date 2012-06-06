@@ -5,39 +5,39 @@ import java.util.ArrayList;
 import uniandes.cupi2.cutimizer.mundo.interfaces.IPatron;
 
 /**
- * Modela un patr髇 de corte
+ * Modela un patr贸n de corte
  * 
  * @author SIERRRA
  */
 public abstract class Patron implements IPatron {
 
 	/**
-	 * La cantidad del patron que se requiere en la soluci髇
+	 * La cantidad del patron que se requiere en la soluci贸n
 	 */
 	private int cantidad;
 
 	/**
-	 * La identificaci髇 del patr髇
+	 * La identificaci贸n del patr贸n
 	 */
 	private int id;
 
 	/**
-	 * El conjunto de items en el patr髇
+	 * El conjunto de items en el patr贸n
 	 */
 	private ArrayList<ItemSolucion> items;
 
 	/**
-	 * El precio del patr髇
+	 * El precio del patr贸n
 	 */
 	private double precio;
 
 	/**
-	 * Indicaciones de c髆o cortar esta patr髇
+	 * Indicaciones de c锟絤o cortar esta patr贸n
 	 */
 	private String indicacionesCorte;
 
 	/**
-	 * Construye un nuevo Patron con los par醡etros dados y sin indicaciones de
+	 * Construye un nuevo Patron con los par谩metros dados y sin indicaciones de
 	 * corte
 	 * 
 	 * @param items
@@ -51,7 +51,7 @@ public abstract class Patron implements IPatron {
 		this.asignarPrecio(precio);
 		this.items = items;
 		this.id = id;
-		indicacionesCorte = "No existen indicaciones de corte para este patr髇";
+		indicacionesCorte = "No existen indicaciones de corte para este patr贸n";
 	}
 
 	/**
@@ -96,7 +96,7 @@ public abstract class Patron implements IPatron {
 	}
 
 	/**
-	 * Devuelve los items del patron
+	 * Devuelve los items del patr贸n
 	 * 
 	 * @return la estructura de datos con los patrones
 	 */
@@ -107,13 +107,13 @@ public abstract class Patron implements IPatron {
 
 	@Override
 	public String toString() {
-		return "Patr髇 #" + id + ": " + cantidad + " l醡ina(s) de "
+		return "Patr贸n #" + id + ": " + cantidad + " l谩mina(s) de "
 				+ darEspesorContenedora() + " mm";
 	}
 
 	@Override
 	/**
-	 * Da indicaciones de c髆o cortar la l醡ina para obtener el patr髇
+	 * Da indicaciones de c贸mo cortar la l谩mina para obtener el patr贸n
 	 */
 	public String darIndicacionesDeCorte() {
 		return indicacionesCorte;
@@ -121,15 +121,15 @@ public abstract class Patron implements IPatron {
 
 	@Override
 	/**
-	 * Da una descripci髇 del patr髇
+	 * Da una descripci贸n del patr贸n
 	 */
 	public String darDescripcion() {
-		String patron = "Patr髇 " + id + " - l醡ina de "
+		String patron = "Patr贸n " + id + " - l谩mina de "
 				+ darEspesorContenedora() + " mm de espesor" + '\n';
 		patron += "Costo unitaro " + precio + '\n';
 		patron += "Costo total " + darPrecio() + '\n' + '\n';
 
-		patron += "Descripci髇 de los items" + '\n' + '\n';
+		patron += "Descripci贸n de los items" + '\n' + '\n';
 		int contador = 1;
 		for (ItemSolucion item : items) {
 			patron += contador + ". " + item.toString();
@@ -141,7 +141,7 @@ public abstract class Patron implements IPatron {
 
 	@Override
 	/**
-	 * Da la cantidad necesidad del patr髇
+	 * Da la cantidad necesidad del patr贸n
 	 */
 	public int darCantidad() {
 		return cantidad;
@@ -158,7 +158,7 @@ public abstract class Patron implements IPatron {
 	}
 
 	/**
-	 * Asignar un nuevo precio al patr髇
+	 * Asignar un nuevo precio al patr贸n
 	 * 
 	 * @param precio
 	 *            the precio to set
@@ -168,7 +168,7 @@ public abstract class Patron implements IPatron {
 	}
 
 	/**
-	 * Modifica la cantidad necesitada del patr髇
+	 * Modifica la cantidad necesitada del patr贸n
 	 */
 	@Override
 	public void asignarCantidad(int nCantidad) {
@@ -176,7 +176,7 @@ public abstract class Patron implements IPatron {
 	}
 
 	/**
-	 * Retorna el espesor de la contenedora de donde sale el patr髇
+	 * Retorna el espesor de la contenedora de donde sale el patr贸n
 	 */
 	public int darEspesorContenedora() {
 		return items.get(0).getRepresentado().getEspesor();

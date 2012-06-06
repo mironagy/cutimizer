@@ -406,7 +406,7 @@ public class Principal {
 			 * principal.agregarDemandas(723, 423, 15, 4*117);
 			 * principal.agregarDemandas(1400, 800, 4, 1*117);
 			 */
-			principal.cargarDeArchivoInstancia("./data/instancia10.txt");
+			principal.cargarDeArchivoInstancia("./data/instancia7.txt");
 
 			principal.generacionColumnas("Generacion 1");
 

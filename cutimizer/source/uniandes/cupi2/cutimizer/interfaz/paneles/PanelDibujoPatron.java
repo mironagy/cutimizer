@@ -12,7 +12,7 @@ import uniandes.cupi2.cutimizer.interfaz.InterfazSolucionConsola;
 public class PanelDibujoPatron extends JPanel {
 
 	/**
-	 * Versi—n para la serializacion
+	 * VersiÃ³n para la serializacion
 	 */
 	private static final long serialVersionUID = 1L;
 
@@ -42,7 +42,7 @@ public class PanelDibujoPatron extends JPanel {
 	public static final int ESCALA = 3;
 
 	/**
-	 * El Graphics2D que se est‡ usando
+	 * El Graphics2D que se estï¿½ usando
 	 */
 
 	private static int largo;
@@ -113,7 +113,7 @@ public class PanelDibujoPatron extends JPanel {
 		int cm = 0;
 		lienzo.setColor(new Color(212, 212, 212));
 		lienzo.setFont(new Font("Arial", Font.PLAIN, 10));
-		// Dibujar la l’nea completa cada 10 cm
+		// Dibujar la lï¿½nea completa cada 10 cm
 		for (int i = INICIO; i <= ancho - 10; i += cm10) {
 			linea = new Line2D.Double(i, 9, i, alto - 10);
 			lienzo.draw(linea);
@@ -134,7 +134,7 @@ public class PanelDibujoPatron extends JPanel {
 				INICIO_CUADRILLA, alto - 10);
 		lienzo.draw(linea);
 
-		// Dibuja la l’nea chica cada 10 cm
+		// Dibuja la lï¿½nea chica cada 10 cm
 		for (int i = INICIO; i <= ancho - 10; i += cm10) {
 			linea = new Line2D.Double(i, 9, i, INICIO_CUADRILLA);
 			lienzo.draw(linea);
@@ -185,7 +185,7 @@ public class PanelDibujoPatron extends JPanel {
 		int cm = 0;
 		lienzo.setColor(new Color(212, 212, 212));
 		lienzo.setFont(new Font("Arial", Font.PLAIN, 10));
-		// Dibujar la l’nea completa cada 10 cm
+		// Dibujar la lï¿½nea completa cada 10 cm
 		for (int i = INICIO; i <= getWidth() - 10; i += cm10) {
 			linea = new Line2D.Double(i, 9, i, getHeight() - 10);
 			lienzo.draw(linea);
@@ -206,7 +206,7 @@ public class PanelDibujoPatron extends JPanel {
 				INICIO_CUADRILLA, getHeight() - 10);
 		lienzo.draw(linea);
 
-		// Dibuja la l’nea chica cada 10 cm
+		// Dibuja la lï¿½nea chica cada 10 cm
 		for (int i = INICIO; i <= getWidth() - 10; i += cm10) {
 			linea = new Line2D.Double(i, 9, i, INICIO_CUADRILLA);
 			lienzo.draw(linea);
@@ -271,7 +271,7 @@ public class PanelDibujoPatron extends JPanel {
 	}
 
 	/**
-	 * Da el lienzo que se est‡ usando para dibujar
+	 * Da el lienzo que se estÃ¡ usando para dibujar
 	 * 
 	 * @return el lienzo
 	 */
@@ -286,43 +286,37 @@ public class PanelDibujoPatron extends JPanel {
 
 		((Graphics2D) getGraphics()).clearRect(0, 0, getWidth(), getHeight());
 	}
-
-	public void dibujarSolucion() {
+	
+	/**
+	 * Dibuja cuando no hay patrÃ³n seleccionado sino una soluciÃ³n
+	 */
+	public void dibujarPatronNoSeleccionado() {
 		Graphics2D g = (Graphics2D) getGraphics();
 
 		g.setFont(new Font("Arial", Font.PLAIN, 60));
-		g.drawString("Seleccione un patrón", getWidth() / 6, getHeight() / 2);
+		g.drawString("Seleccione un patrÃ³n", getWidth() / 6, getHeight() / 2);
 
 	}
 
 	@Override
 	public void repaint()
 	{
-		super.repaint();
 		if(getGraphics()!=null)
-			this.paintComponent(getGraphics());
+			interfaz.refrezcar(true);
 	}
 	
 	
 	@Override
 	public void paint(Graphics g) {
-		// TODO Auto-generated method stub
-		super.paint(g);
-		this.paintComponent(g);
 	}
+	
 	@Override
 	/**
 	 * Pinta el panel
 	 */
 	public void paintComponent(Graphics g) {
-		super.paintComponent(g);
-		Graphics2D lienzo = (Graphics2D) g;
-		lienzo.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
-				RenderingHints.VALUE_ANTIALIAS_ON);
-		lienzo.setColor(Color.WHITE);
-		lienzo.fillRect(0, 0, getWidth(), getHeight());
 
-		interfaz.refrezcar();
+		System.out.println("Sellamas");
 
 	}
 
