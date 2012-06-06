@@ -46,7 +46,7 @@ public class ProblemaAuxiliarDP extends ProblemaAuxiliar {
 	private ArrayList<Integer> Q1;
 
 	/**
-	 * El número de piezas
+	 * El nÔøΩmero de piezas
 	 */
 	private int m;
 	/**
@@ -58,20 +58,20 @@ public class ProblemaAuxiliarDP extends ProblemaAuxiliar {
 	 */
 	private int H;
 	/**
-	 * Los itemes de la soluciÛn
+	 * Los itemes de la soluci√≥n
 	 */
 	private int[][] item;
 	/**
-	 * La posiciÛn de los cortes guillotina en la soluciÛn
+	 * La posiciÔøΩn de los cortes guillotina en la soluci√≥n
 	 */
 	private int[][] position;
 	/**
-	 * El tipo de corte guillotina en la soluciÛn
+	 * El tipo de corte guillotina en la soluci√≥n
 	 */
 	private String[][] gullotine;
 	/**
-	 * El valor del item m·s grande para cada punto de discretizaciÛn en la
-	 * soluciÛn
+	 * El valor del item m√°s grande para cada punto de discretizaci√≥n en la
+	 * soluci√≥n
 	 */
 	private double[][] V;
 
@@ -81,7 +81,7 @@ public class ProblemaAuxiliarDP extends ProblemaAuxiliar {
 	private boolean print;
 
 	/**
-	 * Cantidad de items en la soluciÛn
+	 * Cantidad de items en la soluci√≥n
 	 */
 	private ArrayList<Integer> amountOfItems;
 
@@ -96,7 +96,7 @@ public class ProblemaAuxiliarDP extends ProblemaAuxiliar {
 	private int espesor;
 
 	/**
-	 * Las indicaciones de cómo cortar la contenedora
+	 * Las indicaciones de c√≥mo cortar la contenedora
 	 */
 	private String instructions;
 
@@ -118,7 +118,7 @@ public class ProblemaAuxiliarDP extends ProblemaAuxiliar {
 	 *            los valores de los items correspondientes a las variables
 	 *            daules
 	 * @param print
-	 *            si se debe imprimir el proceso o no (útil para hacer debug)
+	 *            si se debe imprimir el proceso o no (√∫til para hacer debug)
 	 */
 	public ProblemaAuxiliarDP(int W, int H, int E, ArrayList<Integer> w,
 			ArrayList<Integer> h, ArrayList<Double> v, boolean print) {
@@ -142,7 +142,7 @@ public class ProblemaAuxiliarDP extends ProblemaAuxiliar {
 	}
 
 	/**
-	 * Inicia la ejecuciÛn del problema auxiliar
+	 * Inicia la ejecuci√≥n del problema auxiliar
 	 */
 	@Override
 	public void run() {
@@ -232,7 +232,7 @@ public class ProblemaAuxiliarDP extends ProblemaAuxiliar {
 			amountOfItems.add(0);
 		}
 
-		// Llena el arreglo con la soluciÛn
+		// Llena el arreglo con la soluci√≥n
 		getItemsInSolution(amountOfItems, r - 1, s - 1, 0, 0);
 
 		if (print) {
@@ -303,15 +303,15 @@ public class ProblemaAuxiliarDP extends ProblemaAuxiliar {
 	}
 
 	/**
-	 * Encuentra el indice del item m·s grande que (p,q) con valor v
+	 * Encuentra el indice del item m√°s grande que (p,q) con valor v
 	 * 
 	 * @param p
-	 *            el ancho m·ximo
+	 *            el ancho m√°ximo
 	 * @param q
-	 *            el alto m·ximo
+	 *            el alto m√°ximo
 	 * @param V
 	 *            el valor v dado
-	 * @return el Ìndice m·s grande
+	 * @return el √≠ndice m√°s grande
 	 */
 	private int getItemFor(int p, int q, double V) {
 		ArrayList<Integer> values = new ArrayList<Integer>();
@@ -324,13 +324,13 @@ public class ProblemaAuxiliarDP extends ProblemaAuxiliar {
 	}
 
 	/**
-	 * Encuentra valor del item m·s grande menor a p y q
+	 * Encuentra valor del item m√°s grande menor a p y q
 	 * 
 	 * @param p
-	 *            el alto m·ximo
+	 *            el alto m√°ximo
 	 * @param q
-	 *            el ancho m·ximo
-	 * @return el valor del item m·s grande
+	 *            el ancho m√°ximo
+	 * @return el valor del item m√°s grande
 	 */
 	private double getMaximumValueFor(int p, int q) {
 		ArrayList<Double> values = new ArrayList<Double>();
@@ -343,12 +343,12 @@ public class ProblemaAuxiliarDP extends ProblemaAuxiliar {
 	}
 
 	/**
-	 * Imprime los puntos de discretizaciÛn reducidos
+	 * Imprime los puntos de discretizaci√≥n reducidos
 	 * 
 	 * @param P
-	 *            el arreglo de puntos de discretizaciÛn para el ancho
+	 *            el arreglo de puntos de discretizaci√≥n para el ancho
 	 * @param Q
-	 *            el arreglo de puntos de discretizaciÛn para el ancho
+	 *            el arreglo de puntos de discretizaci√≥n para el ancho
 	 */
 	private void printDP(ArrayList<Integer> P, ArrayList<Integer> Q) {
 		System.out.println();
@@ -371,7 +371,7 @@ public class ProblemaAuxiliarDP extends ProblemaAuxiliar {
 	}
 
 	/**
-	 * Imprime los puntos de discretizaciÛn
+	 * Imprime los puntos de discretizaci√≥n
 	 */
 	private void printDP() {
 		System.out.println();
@@ -394,7 +394,7 @@ public class ProblemaAuxiliarDP extends ProblemaAuxiliar {
 	}
 
 	/**
-	 * Genera los puntos de discretizaciÛn dado los items
+	 * Genera los puntos de discretizaci√≥n dado los items
 	 */
 	private void generateDP() {
 
@@ -470,11 +470,11 @@ public class ProblemaAuxiliarDP extends ProblemaAuxiliar {
 	}
 
 	/**
-	 * Retorna la cantidad de items dado un tamaño de contenedora y la posición
+	 * Retorna la cantidad de items dado un tamaÔøΩo de contenedora y la posiciÔøΩn
 	 * de los mismos
 	 * 
 	 * @param amountOfItems
-	 *            el arreglo donde se almacenar· la soluciÛn
+	 *            el arreglo donde se almacenar√° la soluci√≥n
 	 * @param x
 	 *            el ancho del compartimiento
 	 * @param y
@@ -517,7 +517,7 @@ public class ProblemaAuxiliarDP extends ProblemaAuxiliar {
 		else {
 			String direction = gullotine[x][y];
 			int cutPosition = position[x][y];
-			instructions += "instr Corte " + direction.toLowerCase() +  " en " + cutPosition + " mm de la l·mina " + P1.get(x) + "x"
+			instructions += "instr Corte " + direction.toLowerCase() +  " en " + cutPosition + " mm de la lÔøΩmina " + P1.get(x) + "x"
 					+ Q1.get(y) + " mm" + '\n';
 
 			/**
@@ -646,15 +646,15 @@ public class ProblemaAuxiliarDP extends ProblemaAuxiliar {
 	}
 
 	/**
-	 * Retorna el Ìndice del punto de discretizaciÛn m·s pequeño que la
-	 * dimensiÛn dada
+	 * Retorna el √≠ndice del punto de discretizaci√≥n m√°s peque√±o que la
+	 * dimensi√≥n dada
 	 * 
 	 * @param size
-	 *            la dimensiÛn m·xima
+	 *            la dimensi√≥n m√°xima
 	 * @param d
-	 *            la colecciÛn de puntos de discretizaciÛn apropiada para la
-	 *            dimensiÛn
-	 * @return el Ìndice del punto de discretizaciÛn m·s grande
+	 *            la colecci√≥n de puntos de discretizaci√≥n apropiada para la
+	 *            dimensi√≥n
+	 * @return el √≠ndice del punto de discretizaci√≥n m√°s grande
 	 */
 	private int getIndexOfBiggestDPSmallerThan(int size, ArrayList<Integer> d) {
 		int max = -1;
@@ -668,11 +668,11 @@ public class ProblemaAuxiliarDP extends ProblemaAuxiliar {
 	}
 
 	/**
-	 * Retorna el m·ximo valor de una colecciÛn de doubles
+	 * Retorna el m√°ximo valor de una colecci√≥n de doubles
 	 * 
 	 * @param valores
-	 *            la colecciÛn de doubles
-	 * @return el m·ximo valor, si valores es vacÌa entonces retorna -10
+	 *            la colecci√≥n de doubles
+	 * @return el m√°ximo valor, si valores es vac√≠a entonces retorna -10
 	 */
 	private double getMaximum(ArrayList<Double> valores) {
 		double max = -10;
@@ -686,11 +686,11 @@ public class ProblemaAuxiliarDP extends ProblemaAuxiliar {
 	}
 
 	/**
-	 * Retorna el minimo entero de la colecciÛn de enteros
+	 * Retorna el minimo entero de la colecci√≥n de enteros
 	 * 
 	 * @param valores
-	 *            la colecciÛn de enteros
-	 * @return el minimo entero, si es vacÌa. Entonces retorna infinito
+	 *            la colecci√≥n de enteros
+	 * @return el minimo entero, si es vac√≠a. Entonces retorna infinito
 	 */
 	private int getMinimumInteger(ArrayList<Integer> valores) {
 		int min = Integer.MAX_VALUE;
@@ -717,8 +717,8 @@ public class ProblemaAuxiliarDP extends ProblemaAuxiliar {
 	 * Retorna el entero de mayor valor
 	 * 
 	 * @param valores
-	 *            la colecciÛn de enteros donde se busca el m·ximo
-	 * @return el m·ximo valor, si valores es vacÌo retorna -10
+	 *            la colecci√≥n de enteros donde se busca el m√°ximo
+	 * @return el m√°ximo valor, si valores es vac√≠o retorna -10
 	 */
 	private int getMaximumInteger(ArrayList<Integer> valores) {
 		int max = -10;

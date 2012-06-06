@@ -3,8 +3,6 @@ package uniandes.cupi2.cutimizer.interfaz;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Graphics2D;
-import java.awt.Toolkit;
-
 import javax.swing.BorderFactory;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -55,8 +53,9 @@ public class InterfazSolucionConsola extends JFrame implements
 			// handle exception
 		}
 
-		Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
-		setSize(d);
+		
+		setExtendedState(getExtendedState()|JFrame.MAXIMIZED_BOTH);
+
 		this.solucion = nSolucion;
 		this.setTitle(solucion.getNombre() + " del "
 				+ solucion.getFecha().toString());
