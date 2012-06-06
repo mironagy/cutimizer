@@ -1,0 +1,114 @@
+Installing glpk-java on your computer
+*************************************
+
+POSIX
+=====
+
+Requirements
+------------
+
+To install glpk-java you will need the following
+- gcc
+- libtool
+- SWIG
+- GLPK
+- Java JDK
+
+For Debian and Ubuntu the following packages should be installed
+- gcc
+- glpk
+- openjdk-6-jdk 
+- libtool
+- swig
+
+For Fedora the following packages should be installed
+- gcc
+- glpk-devel
+- java-1.6.0-openjdk-devel
+- libtool
+- swig
+
+Environment variable JAVA_HOME must be set.
+
+Unpacking the distribution file
+-------------------------------
+
+Copy the distribution file to a working directory.
+Check the checksums with the following commands:
+
+        md5sum glpk-java-X.Y.tar.gz
+        sha1sum glpk-java-X.Y.tar.gz
+
+Unpack the archive with the following command:
+
+        tar -xzf glpk-java-X.Y.tar.gz
+
+Now change to the new direcotry glpk-java-X.Y
+
+Configuring the package
+-----------------------
+
+To configure the package use command
+
+       ./configure
+
+OS X has jni.h in a special path. You may want to specify this path in the
+parameters CPPFLAGS and SWIGFLAGS for the configure script, e.g.
+
+        ./configure \
+        CPPFLAGS=-I/System/Library/Frameworks/JavaVM.framework/Headers \
+        SWIGFLAGS=-I/System/Library/Frameworks/JavaVM.framework/Headers 
+
+Compiling the package
+---------------------
+
+The package is compiled with the command 
+
+       make
+
+Check the package
+-----------------
+
+To check if everything is built correctly use the command
+
+       make check
+
+Install the package
+-------------------
+
+To install the package you must be root or a suodoer. As
+sudoer use the command
+
+       sudo make install
+
+Windows
+=======
+
+Requirements
+------------
+
+GLPK
+Swig
+Windows SDK
+Visual c++
+Java JDK
+
+Configure the package
+---------------------
+
+Change to directory w32 or w64 depending on whether you use
+a 32 or 64 bit version of Windows.
+
+Adjust the pathes specified in the batchfile.
+
+
+Compile the package
+-------------------
+
+Execute the batchfile provided.
+
+Install the package
+-------------------
+
+Copy the jar file and the dll to your preferred pathes.
+

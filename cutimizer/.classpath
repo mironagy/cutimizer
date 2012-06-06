@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="classes" path="source"/>
+	<classpathentry exported="true" kind="lib" path="test/lib/junit.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/gurobi.jar"/>
+	<classpathentry kind="lib" path="lib/lp_solve_5.5_java/lib/lpsolve55j.jar"/>
+	<classpathentry kind="lib" path="lib/glpk/GLPK 4.8 Java Interface/windows/glpk.jar"/>
+	<classpathentry kind="lib" path="lib/glpk/glpk-4.47/w64/glpk-java.jar"/>
+	<classpathentry kind="con" path="com.soyatec.uml.CONTAINER"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>

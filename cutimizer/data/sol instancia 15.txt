@@ -1,0 +1,5 @@
+Columnas generadas: 13
+FO relajada: 87.94565217391303
+FO entera con columnas generadas: 89.0
+GAP: 1.1988629341243484%
+Tiempo de ejecución total 445 segundos

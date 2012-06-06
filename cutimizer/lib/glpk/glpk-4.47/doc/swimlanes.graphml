@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
+  <!--Created by yFiles for Java 2.7-->
+  <key for="graphml" id="d0" yfiles.type="resources"/>
+  <key attr.name="url" attr.type="string" for="node" id="d1"/>
+  <key attr.name="description" attr.type="string" for="node" id="d2"/>
+  <key for="node" id="d3" yfiles.type="nodegraphics"/>
+  <key attr.name="Beschreibung" attr.type="string" for="graph" id="d4">
+    <default/>
+  </key>
+  <key attr.name="url" attr.type="string" for="edge" id="d5"/>
+  <key attr.name="description" attr.type="string" for="edge" id="d6"/>
+  <key for="edge" id="d7" yfiles.type="edgegraphics"/>
+  <graph edgedefault="directed" id="G">
+    <node id="n0" yfiles.foldertype="group">
+      <data key="d3">
+        <y:TableNode configuration="YED_TABLE_NODE">
+          <y:Geometry height="1473.354206969246" width="2096.7678571428564" x="212.52380952380952" y="12.628224206349188"/>
+          <y:Fill color="#E0E0E0" color2="#E0E0E0" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.45361328125" modelName="internal" modelPosition="t" textColor="#000000" visible="true" width="100.27685546875" x="998.2455008370531" y="4.0">GLPK for Java</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="custom" textColor="#000000" visible="true" width="104.30078125" x="98.00426277281736" y="33.0">Application Class<y:LabelModel>
+              <y:ColumnNodeLabelModel offset="3.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:ColumnNodeLabelModelParameter id="column_0" inside="true" verticalPosition="0.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="custom" textColor="#000000" visible="true" width="33.537109375" x="1032.072746672453" y="33.0">GLPK<y:LabelModel>
+              <y:ColumnNodeLabelModel offset="3.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:ColumnNodeLabelModelParameter id="column_1" inside="true" verticalPosition="0.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="custom" textColor="#000000" visible="true" width="49.591796875" x="1325.1948371362423" y="33.0">GLPKJNI<y:LabelModel>
+              <y:ColumnNodeLabelModel offset="3.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:ColumnNodeLabelModelParameter id="column_2" inside="true" verticalPosition="0.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="custom" textColor="#000000" visible="true" width="197.48828125" x="1552.2679599661033" y="33.0">glpk_java.so / glpk_java_4_44.dll<y:LabelModel>
+              <y:ColumnNodeLabelModel offset="3.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:ColumnNodeLabelModelParameter id="column_3" inside="true" verticalPosition="0.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="custom" textColor="#000000" visible="true" width="139.2578125" x="1878.735445601851" y="33.0">glpk.so / glpk_4_44.dll<y:LabelModel>
+              <y:ColumnNodeLabelModel offset="3.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:ColumnNodeLabelModelParameter id="column_4" inside="true" verticalPosition="0.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="custom" textColor="#000000" visible="true" width="80.833984375" x="408.1620236028434" y="33.0">ListenerClass<y:LabelModel>
+              <y:ColumnNodeLabelModel offset="3.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:ColumnNodeLabelModelParameter id="column_5" inside="true" verticalPosition="0.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="custom" textColor="#000000" visible="true" width="82.744140625" x="706.9345351769172" y="33.0">GLPKCallback<y:LabelModel>
+              <y:ColumnNodeLabelModel offset="3.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:ColumnNodeLabelModelParameter id="column_6" inside="true" verticalPosition="0.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:StyleProperties>
+            <y:Property class="java.awt.Color" name="yed.table.header.color.main" value="#ffffff"/>
+            <y:Property class="java.awt.Color" name="yed.table.section.color" value="#cccccc"/>
+            <y:Property name="y.view.tabular.TableNodePainter.ALTERNATE_COLUMN_SELECTION_STYLE">
+              <y:SimpleStyle fillColor="#474A4380" lineColor="#000000" lineType="line" lineWidth="3.0"/>
+            </y:Property>
+            <y:Property class="java.lang.String" name="yed.table.lane.style" value="lane.style.columns"/>
+            <y:Property name="y.view.tabular.TableNodePainter.ALTERNATE_ROW_STYLE">
+              <y:SimpleStyle fillColor="#474A4340" lineColor="#000000" lineType="line" lineWidth="1.0"/>
+            </y:Property>
+            <y:Property name="y.view.tabular.TableNodePainter.ALTERNATE_ROW_SELECTION_STYLE">
+              <y:SimpleStyle fillColor="#474A4380" lineColor="#000000" lineType="line" lineWidth="3.0"/>
+            </y:Property>
+            <y:Property class="java.awt.Color" name="yed.table.lane.color.alternating" value="#e0e0e0"/>
+            <y:Property class="java.awt.Color" name="yed.table.header.color.alternating" value="#e0e0e0"/>
+            <y:Property name="y.view.tabular.TableNodePainter.ALTERNATE_COLUMN_STYLE">
+              <y:SimpleStyle fillColor="#474A4340" lineColor="#000000" lineType="line" lineWidth="1.0"/>
+            </y:Property>
+            <y:Property class="java.lang.Double" name="yed.table.header.height" value="24.0"/>
+            <y:Property class="java.awt.Color" name="yed.table.lane.color.main" value="#ffffff"/>
+          </y:StyleProperties>
+          <y:State autoResize="true" closed="false" closedHeight="80.0" closedWidth="100.0"/>
+          <y:Insets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+          <y:BorderInsets bottom="46" bottomF="45.98243117559514" left="27" leftF="27.47619047619048" right="29" rightF="29.29166666666606" top="23" topF="23.371775793650812"/>
+          <y:Table autoResizeTable="true" defaultColumnWidth="120.0" defaultMinimumColumnWidth="80.0" defaultMinimumRowHeight="50.0" defaultRowHeight="80.0">
+            <y:DefaultColumnInsets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
+            <y:DefaultRowInsets bottom="0.0" left="0.0" right="0.0" top="0.0"/>
+            <y:Insets bottom="0.0" left="0.0" right="0.0" top="30.0"/>
+            <y:Columns>
+              <y:Column id="column_0" minimumWidth="80.0" width="300.3093067956347">
+                <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
+              </y:Column>
+              <y:Column id="column_5" minimumWidth="80.0" width="296.5394179894174">
+                <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
+              </y:Column>
+              <y:Column id="column_6" minimumWidth="80.0" width="302.91576140873013">
+                <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
+              </y:Column>
+              <y:Column id="column_1" minimumWidth="80.0" width="298.1536303323413">
+                <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
+              </y:Column>
+              <y:Column id="column_2" minimumWidth="80.0" width="304.145238095238">
+                <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
+              </y:Column>
+              <y:Column id="column_3" minimumWidth="80.0" width="297.8974919394843">
+                <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
+              </y:Column>
+              <y:Column id="column_4" minimumWidth="80.0" width="296.8070105820109">
+                <y:Insets bottom="0.0" left="0.0" right="0.0" top="24.0"/>
+              </y:Column>
+            </y:Columns>
+            <y:Rows>
+              <y:Row height="1419.354206969246" id="row_0" minimumHeight="50.0">
+                <y:Insets bottom="0.0" left="0.0" right="0.0" top="0.0"/>
+              </y:Row>
+            </y:Rows>
+          </y:Table>
+        </y:TableNode>
+      </data>
+      <graph edgedefault="directed" id="n0:">
+        <node id="n0::n0">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.terminator">
+              <y:Geometry height="60.0" width="120.0" x="300.0" y="90.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="30.9765625" x="44.51171875" y="21.0185546875">Start</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n1">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="60.0" width="240.0" x="240.0" y="360.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="177.77734375" x="31.111328125" y="21.0185546875">classLoader.loadClass("GLPK")</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n2">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="120.0" width="240.0" x="1140.0" y="330.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="59.8515625" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="224.142578125" x="7.9287109375" y="30.07421875">Windows:
+System.loadLibrary("glpk_4_44_java");
+Linux:
+System.loadLibrary("glpk_java");</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n3">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="60.0" width="240.0" x="240.0" y="480.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.92578125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="154.380859375" x="42.8095703125" y="14.037109375">GLPK.glp_set_prob_name(
+  lp, "myProblem");</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n4">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="60.0" width="240.0" x="1140.0" y="480.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.92578125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="186.19140625" x="26.904296875" y="14.037109375">GLPKJNI.glp_set_prob_name(
+  glp_prob.getCPtr(P), P, name);</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n5">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="60.0" width="240.0" x="1440.0" y="480.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.92578125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="250.767578125" x="-5.3837890625" y="14.037109375">  glp_set_prob_name(
+  long jarg1, glp_prob jarg1_, String jarg2)</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n6">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="60.0" width="240.0" x="1740.0" y="480.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.92578125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="154.1875" x="42.90625" y="14.037109375">glp_set_prob_name(
+  arg1,(char const *)arg2);</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n7">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="60.0" width="240.0" x="2040.0" y="480.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.92578125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="154.1875" x="42.90625" y="14.037109375">glp_set_prob_name(
+  arg1,(char const *)arg2);</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n8">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="60.0" width="240.0" x="1740.0" y="360.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.92578125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="100.85546875" x="69.572265625" y="14.037109375">Intialization
+dlopen("libglpk")</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n9">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="60.0" width="240.0" x="2040.0" y="360.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="72.70703125" x="83.646484375" y="21.0185546875">Intialization</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n10">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="60.0" width="240.0" x="240.0" y="180.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="108.009765625" x="65.9951171875" y="21.0185546875">new ListenerClass</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n11">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="60.0" width="240.0" x="540.0" y="180.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="73.0" x="83.5" y="21.0185546875">Constructor</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n12">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="60.0" width="240.0" x="840.0" y="270.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="133.791015625" x="53.1044921875" y="21.0185546875">listeners.add(listener);</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n13">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="60.0" width="240.0" x="240.0" y="270.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="162.279296875" x="38.8603515625" y="21.0185546875">GLPKCallback.addListener()</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n14">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="240.0" width="240.0" x="240.0" y="600.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.92578125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="160.94921875" x="39.525390625" y="104.037109375">GLPK.glp_intopt(
+glp_prob P, glp_iocp parm)</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n15">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="60.0" width="240.0" x="1140.0" y="600.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.888671875" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="191.107421875" x="24.4462890625" y="7.0556640625">GLPKJNI.glp_intopt(
+  glp_prob.getCPtr(P), P, 
+  glp_iocp.getCPtr(parm), parm);</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n16">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="60.0" width="240.0" x="1440.0" y="600.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.92578125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="170.505859375" x="34.7470703125" y="14.037109375">glp_intopt(
+arg1,(glp_iocp const *)arg2);</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n17">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="60.0" width="240.0" x="1740.0" y="600.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.92578125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="170.505859375" x="34.7470703125" y="14.037109375">glp_intopt(
+arg1,(glp_iocp const *)arg2);</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n18">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="240.0" width="240.0" x="2040.0" y="600.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.92578125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="154.1875" x="42.90625" y="104.037109375">glp_set_prob_name(
+  arg1,(char const *)arg2);</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n19">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="60.0" width="240.0" x="1740.0" y="690.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.888671875" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="154.45703125" x="42.771484375" y="7.0556640625">void glp_java_cb(...) {
+  CallStaticVoidMethod(...)
+}</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n20">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="60.0" width="240.0" x="840.0" y="690.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="132.490234375" x="53.7548828125" y="21.0185546875">listener.callback(tree);</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n21">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="60.0" width="240.0" x="540.0" y="690.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.92578125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="208.228515625" x="15.8857421875" y="14.037109375">public void callback(glp_tree tree) {
+}</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n22">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="420.0" width="240.0" x="240.0" y="900.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.888671875" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="163.427734375" x="38.2861328125" y="187.0556640625">try {
+} catch (GlpkException ex) {
+}</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n23">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="60.0" width="240.0" x="1140.0" y="900.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="4.0" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="4.0" x="118.0" y="28.0"/>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n24">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="60.0" width="240.0" x="1440.0" y="900.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="4.0" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="4.0" x="118.0" y="28.0"/>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n25">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="60.0" width="240.0" x="1740.0" y="900.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="4.0" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="4.0" x="118.0" y="28.0"/>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n26">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="180.0" width="240.0" x="2040.0" y="900.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="52.861328125" x="93.5693359375" y="81.0185546875">xerrror()</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n27">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="180.0" width="240.0" x="1740.0" y="1019.9999999999998"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="101.740234375" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="210.61328125" x="14.693359375" y="39.1298828125">void glp_java_error_hook(void *in) {
+    glp_java_error_occured = 1;
+    /* free GLPK memory */
+    glp_free_env();
+    /* safely return */
+    longjmp(*((jmp_buf*)in), 1);
+}</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n28">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="60.0" width="240.0" x="2040.0" y="1140.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="85.345703125" x="77.3271484375" y="21.0185546875">glp_free_env()</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n29">
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.process">
+              <y:Geometry height="60.0" width="240.0" x="1740.0" y="1260.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.888671875" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="182.55859375" x="28.720703125" y="7.0556640625">void glp_java_throw(
+  JNIEnv *env, char *message) {
+}</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <node id="n0::n30">
+          <data key="d2"/>
+          <data key="d3">
+            <y:GenericNode configuration="com.yworks.flowchart.terminator">
+              <y:Geometry height="60.0" width="120.0" x="300.0" y="1380.0"/>
+              <y:Fill color="#CCCCCC" color2="#CCCCCC" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="2.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="25.50390625" x="47.248046875" y="21.0185546875">End</y:NodeLabel>
+            </y:GenericNode>
+          </data>
+        </node>
+        <edge id="n0::e0" source="n0::n1" target="n0::n2">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e1" source="n0::n2" target="n0::n1">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e2" source="n0::n1" target="n0::n3">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true" width="15.390625" x="2.0" y="21.0478515625">...</y:EdgeLabel>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e3" source="n0::n3" target="n0::n4">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e4" source="n0::n4" target="n0::n3">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="120.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e5" source="n0::n4" target="n0::n5">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e6" source="n0::n5" target="n0::n4">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="105.0555555555556" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e7" source="n0::n5" target="n0::n6">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="-120.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e8" source="n0::n6" target="n0::n5">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="102.9761904761906" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e9" source="n0::n6" target="n0::n7">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e10" source="n0::n7" target="n0::n6">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="120.03869047619025" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e11" source="n0::n8" target="n0::n9">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e12" source="n0::n9" target="n0::n8">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e13" source="n0::n8" target="n0::n2">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e14" source="n0::n10" target="n0::n11">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e15" source="n0::n11" target="n0::n10">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="102.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e16" source="n0::n13" target="n0::n12">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e17" source="n0::n12" target="n0::n13">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e18" source="n0::n0" target="n0::n10">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e19" source="n0::n10" target="n0::n13">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e20" source="n0::n13" target="n0::n1">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e21" source="n0::n15" target="n0::n16">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e22" source="n0::n16" target="n0::n17">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="-120.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e23" source="n0::n17" target="n0::n18">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="120.0" sy="0.0" tx="-120.0" ty="-90.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e24" source="n0::n18" target="n0::n19">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e25" source="n0::n19" target="n0::n20">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e26" source="n0::n20" target="n0::n21">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e27" source="n0::n21" target="n0::n20">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="10.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e28" source="n0::n20" target="n0::n19">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e29" source="n0::n14" target="n0::n15">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="120.0" sy="-90.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e30" source="n0::n18" target="n0::n14">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="-120.0" sy="90.0" tx="120.0" ty="90.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e31" source="n0::n3" target="n0::n14">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true" width="15.390625" x="2.0" y="21.000244140625">...</y:EdgeLabel>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e32" source="n0::n22" target="n0::n23">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
+                <y:Point x="480.0" y="930.0"/>
+              </y:Path>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e33" source="n0::n23" target="n0::n24">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e34" source="n0::n24" target="n0::n25">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="-120.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e35" source="n0::n25" target="n0::n24">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="102.9761904761906" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e36" source="n0::n25" target="n0::n26">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="120.0" sy="0.0" tx="-120.0" ty="-60.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e37" source="n0::n26" target="n0::n27">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="-120.0" sy="60.0" tx="120.0" ty="-60.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e38" source="n0::n27" target="n0::n28">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="120.0" sy="60.0" tx="-120.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e39" source="n0::n28" target="n0::n27">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="60.00000000000023"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e40" source="n0::n29" target="n0::n22">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="-120.0" sy="0.0" tx="120.0" ty="180.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true" width="87.73046875" x="-673.8267822265625" y="2.0">GlpkException</y:EdgeLabel>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e41" source="n0::n27" target="n0::n29">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e42" source="n0::n22" target="n0::n30">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e43" source="n0::n14" target="n0::n22">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.962890625" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true" width="15.390625" x="2.0" y="21.000244140625">...</y:EdgeLabel>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+        <edge id="n0::e44" source="n0::n19" target="n0::n18">
+          <data key="d7">
+            <y:PolyLineEdge>
+              <y:Path sx="0.0" sy="0.0" tx="-90.0" ty="0.0"/>
+              <y:LineStyle color="#000000" type="line" width="1.0"/>
+              <y:Arrows source="none" target="standard"/>
+              <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+          </data>
+        </edge>
+      </graph>
+    </node>
+    <edge id="e0" source="n0" target="n0::n15">
+      <data key="d7">
+        <y:PolyLineEdge>
+          <y:Path sx="-724.7470238095239" sy="199.87939453125" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e1" source="n0::n26" target="n0">
+      <data key="d7">
+        <y:PolyLineEdge>
+          <y:Path sx="-120.0" sy="38.892857142857125" tx="722.6805555555559" ty="431.6460611979164"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+  </graph>
+  <data key="d0">
+    <y:Resources/>
+  </data>
+</graphml>

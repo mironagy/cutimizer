@@ -1,0 +1,103 @@
+ -----
+ Usage
+ -----
+ Heinrich Schuchardt
+ <xypron.glpk@gmx.de>
+ -----
+ September 2011
+ -----
+
+Usage
+
+ Please, refer to file doc/glpk.pdf of the GLPK source distribution for a
+ detailed description of the methods and constants.
+ 
+* Loading the JNI library
+
+ To be able to use the JNI library in a Java program it has to be loaded.
+ The path to dynamic link libaries can specified on the command line when
+ calling the Java runtime, e.g.
+
+---
+java -Djava.library.path=/usr/local/lib/jni/libglpk_java
+---
+
+ The following code is used in class GLPK to load the JNI library (for
+ version 4.47 of GLPK):
+
+---
+static {
+  try {
+    if (System.getProperty("os.name").toLowerCase().contains("windows")) {
+      // try to load Windows library
+      System.loadLibrary("glpk_4_47_java");
+    } else {
+      // try to load Linux library
+      System.loadLibrary("glpk_java");
+    }
+  } catch (UnsatisfiedLinkError e) {
+    System.err.println(
+      "The dynamic link library for GLPK for Java could not be"
+      + "loaded.\nConsider using\njava -Djava.library.path=");
+    throw e;
+  }
+}
+---
+
+ If the JNI library can not be loaded, you will receive an exception
+ java.lang.UnsatisfiedLinkError.
+ 
+* Exceptions
+
+ When illegal parameters are passed to a function of the GLPK native library
+ an exception GlpkException is thrown. Due to the architecture of GLPK all
+ GLPK objects are invalid when such an exception has occured.
+
+** Implementation details
+
+ GLPK for Java registers a function glp_java_error_hook() to glp_error_hook()
+ before calling an GLPK API function. If an error occurs function
+ glp_free_env() is called and a long jump is used to return to the calling
+ environment. Then function glp_java_throw() is called which throws
+ a GlpkException.
+ 
+* Callbacks
+
+ The MIP solver provides a callback functionality. This is used to call
+ method callback of class GlpkCallback. A Java program can listen to the
+ callbacks by instantiating a class implementing interface
+ GlpkCallbackListener and registering the object with method addListener()
+ of class GlpkCallback. The listener can be deregistered with method
+ removeListener(). The listener can use method GLPK.glp_ios_reason() to find
+ out why it is called. For details see the GLPK library documentation.
+ 
+* Output listener
+
+ GLPK provides a hook for terminal output. A Java program can listen to the
+ callbacks by instantiating a class implementing interface GlpkTerminalListener
+ and registering the object with method addListener() of class GlpkTerminal.
+ The listener can be dregistered with method removeListener().
+ After a call to glp_free_env() class GlpkTerminal has to registered again
+ by calling GLPK.glp_term_hook(null, null). glp_free_env() is called if
+ an exception GlpkException occurs.
+
+* Aborting a GLPK library call
+
+ Method GLPK.glp_java_error(String message) can be used to abort any call
+ to the GLPK library. An exception GlpkException will occur. As GLPK is not
+ threadsafe the call must be placed in the same thread as the initial call that
+ is to be aborted. The output() method of a GlpkTerminalListener can be used
+ for this purpose.
+
+* Threads
+
+ The GLPK library is not thread safe. Never two threads should be running that
+ access the GLPK library at the same time. When a new thread accesses the
+ library it should call GLPK.glp_free_env(). When using an GlpkTerminalListener
+ it is necessary to register GlpkTerminal again by calling
+ GLPK.glp_term_hook(null, null).
+
+ When writing a GUI application it is advisable to use separate threads for
+ calls to GLPK and the GUI. Otherwise the GUI cannot react to events during
+ the calls to the GLPK libary.
+

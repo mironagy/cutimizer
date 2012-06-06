@@ -1,0 +1,13 @@
+Version 1.0.19, 2011-11-01
+	Use GNU build system
+Version 1.0.18, 2011-09-10
+	Release for GLPK 4.47
+Version 1.0.17, 2011-04-29
+	Release for GLPK 4.46
+	Add compiler flag /Zi for Windows (write debug information to PDB)
+Version 1.0.16, 2010-12-06
+	Release for GLPK 4.45
+Version 1.0.15, 2010-09-19
+	Terminal output listener added
+Version 1.0.14, 2010-06-03
+	Release for GLPK 4.44

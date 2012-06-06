@@ -1,0 +1,5 @@
+glpk-4.45.2.patch
+	Avoid access violation in SQL driver.
+glpk-4.45.1.patch
+	Avoid duplicate conversion of numeric values in
+	db_iodbc_read.

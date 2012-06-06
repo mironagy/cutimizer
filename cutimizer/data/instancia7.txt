@@ -1,0 +1,17 @@
+TIPO	CANTIDAD	LONGITUD	ANCHO
+15mm	3	800	350
+15mm	1	1430	350
+15mm	2	700	350
+15mm	4	723	423
+
+PRECIO	578000		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			

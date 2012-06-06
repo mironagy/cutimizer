@@ -1,0 +1,6 @@
+Rafael Laboissiere <rafael#debian.org>
+for helping to turn glpk-java into a Debian package and 
+correcting issues in the makefile.
+
+Andrew Makhorin <mao#mai2.rcnet.ru> for developping
+and maintaing GLPK.

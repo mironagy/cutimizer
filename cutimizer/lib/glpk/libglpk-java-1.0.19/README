@@ -1,0 +1,10 @@
+GLPK for Java  - Java Binding for the GNU Linear Progamming Kit
+
+Copyright (C) 2009, 2010, 2011 Heinrich Schuchardt
+E-mail: xypron.glpk@gmx.de
+
+GLPK for Java provides a Java Binding for the GNU Linear Programmng Kit.
+
+See the file COPYING for the GNU General Public Licence.
+
+See the file INSTALL for compilation and installation instructions.
