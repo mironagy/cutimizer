@@ -1,5 +1,6 @@
 package uniandes.cupi2.cutimizer.mundo;
 
+import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.geom.Rectangle2D;
@@ -20,7 +21,7 @@ import uniandes.cupi2.cutimizer.interfaz.paneles.PanelDibujoPatron;
 public class Patron2D extends Patron {
 
 	/**
-	 * Construye una nueva instancia de la clase con los par‡metros dados sin instrucciones de corte
+	 * Construye una nueva instancia de la clase con los parï¿½metros dados sin instrucciones de corte
 	 * @param items
 	 * @param desperdicios
 	 * @param precio
@@ -31,7 +32,7 @@ public class Patron2D extends Patron {
 	}
 
 	/**
-	 * Crea una instancia de la clase con indicaciones de c—mo cortar el patr—n.
+	 * Crea una instancia de la clase con indicaciones de cï¿½mo cortar el patrï¿½n.
 	 * @param items
 	 * @param precio
 	 * @param id
@@ -44,11 +45,11 @@ public class Patron2D extends Patron {
 
 	@Override
 	/**
-	 * Dibuja el patr—n usando un lienzo: dibuja todos los items
+	 * Dibuja el patrï¿½n usando un lienzo: dibuja todos los items
 	 */
 	public void dibujarse(Graphics2D lienzo, int escala) {
 		/**
-		 * Dibuja todos los items tendiendo en cuenta la orientaci—n
+		 * Dibuja todos los items tendiendo en cuenta la orientaciï¿½n
 		 */
 		for (ItemSolucion item : getItems()) {
 			Item representado = item.getRepresentado();
@@ -83,6 +84,7 @@ public class Patron2D extends Patron {
 			lienzo.fill(figura);
 			lienzo.draw(figura);
 			
+			lienzo.setStroke(new BasicStroke(0));
 			lienzo.setColor(Color.BLACK);
 			lienzo.draw(figura);
 		}

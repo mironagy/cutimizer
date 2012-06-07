@@ -3,7 +3,10 @@ package uniandes.cupi2.cutimizer.interfaz;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Graphics2D;
+import java.util.ArrayList;
+
 import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -15,9 +18,12 @@ import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeCellRenderer;
 import javax.swing.tree.TreeSelectionModel;
 
 import uniandes.cupi2.cutimizer.interfaz.paneles.PanelDibujoPatron;
+import uniandes.cupi2.cutimizer.mundo.ItemSolucion;
+import uniandes.cupi2.cutimizer.mundo.Patron2D;
 import uniandes.cupi2.cutimizer.mundo.Solucion;
 import uniandes.cupi2.cutimizer.mundo.interfaces.IPatron;
 
@@ -39,8 +45,9 @@ public class InterfazSolucionConsola extends JFrame implements
 	private JSplitPane divisionHorizontal;
 
 	public InterfazSolucionConsola(Solucion nSolucion) {
-		
+
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		this.setMinimumSize(new Dimension(1265,880));
 		
 		try {
 			// Set System L&F
@@ -55,16 +62,11 @@ public class InterfazSolucionConsola extends JFrame implements
 			// handle exception
 		}
 
-		
-		setExtendedState(getExtendedState()|JFrame.MAXIMIZED_BOTH);
-
 		this.solucion = nSolucion;
 		this.setTitle(solucion.getNombre() + " del "
 				+ solucion.getFecha().toString());
-		this.setVisible(true);
-		this.setResizable(true);
 		this.setLayout(new BorderLayout());
-
+		
 		JPanel panelLista = new JPanel();
 		panelLista.setBorder(BorderFactory.createTitledBorder("Patrones"));
 		panelLista.setLayout(new BorderLayout());
@@ -76,10 +78,20 @@ public class InterfazSolucionConsola extends JFrame implements
 		 */
 		DefaultMutableTreeNode nodoSolucion;
 		DefaultMutableTreeNode nodoPatron;
+		DefaultMutableTreeNode nodoItemSolucion;
 
 		nodoSolucion = new DefaultMutableTreeNode(solucion.getNombre()
 				+ " del " + solucion.getFecha().toString());
+				
 		listaPatrones = new JTree(nodoSolucion);
+		
+		ImageIcon iconoSolucion = new ImageIcon("./data/imagenes/solucion.png");
+		DefaultTreeCellRenderer renderer =  new DefaultTreeCellRenderer();
+		
+		renderer.setOpenIcon(iconoSolucion);
+		
+		listaPatrones.setCellRenderer(renderer);
+		
 		scrollLista = new JScrollPane(listaPatrones);
 
 		listaPatrones.getSelectionModel().setSelectionMode(
@@ -90,6 +102,14 @@ public class InterfazSolucionConsola extends JFrame implements
 		for (int i = 0; i < solucion.getPatrones().size(); i++) {
 			nodoPatron = new DefaultMutableTreeNode(solucion.getPatrones().get(
 					i));
+			
+			ArrayList<ItemSolucion> itemsSolucion = solucion.getPatrones().get(i).getItems();
+			for(ItemSolucion it : itemsSolucion)
+			{
+				nodoItemSolucion = new DefaultMutableTreeNode(it);
+				nodoPatron.add(nodoItemSolucion);
+			}
+			
 			nodoSolucion.add(nodoPatron);
 		}
 
@@ -97,6 +117,8 @@ public class InterfazSolucionConsola extends JFrame implements
 			listaPatrones.expandRow(i);
 		}
 
+		
+		
 		panelLista.add(scrollLista, BorderLayout.CENTER);
 
 		/**
@@ -128,6 +150,10 @@ public class InterfazSolucionConsola extends JFrame implements
 		divisionVertical = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,
 				panelLista, panelCentral);
 		this.add(divisionVertical, BorderLayout.CENTER);
+
+		setVisible(true);
+		setResizable(false);
+		setLocationRelativeTo(null);
 		
 		validate();
 	}
@@ -138,32 +164,36 @@ public class InterfazSolucionConsola extends JFrame implements
 		if (nodo == null)
 			return;
 
-
-		if (nodo.isLeaf()) {
-			if(borrar)
+		if (nodo.getUserObject() instanceof IPatron) {
+			if (borrar)
 				panelDibujoPatron.borrar();
-			if(lienzo == null)
+			if (lienzo == null)
 				lienzo = panelDibujoPatron.darLienzo();
 
-			panelDibujoPatron.refrezcar(lienzo);
+			panelDibujoPatron.dibujarCuadrilla(lienzo);
+			
 			IPatron patron = (IPatron) nodo.getUserObject();
 			patron.dibujarse(lienzo, PanelDibujoPatron.ESCALA);
 
 			areaDescripcion.setText(patron.darDescripcion() + '\n'
 					+ "Instrucciones de cortado: " + '\n' + '\n'
 					+ patron.darIndicacionesDeCorte());
-		} else if (nodo.isRoot()) {
+			panelDibujoPatron.dibujarContenedora(lienzo);
+		}
+
+		else if (nodo.isRoot()) {
 			panelDibujoPatron.borrar();
 			panelDibujoPatron.dibujarPatronNoSeleccionado();
 			areaDescripcion.setText(solucion.toString());
 		}
-		
-		validate();
+		else
+			System.out.println(nodo.getUserObject().getClass().toString());
+
 	}
 
 	@Override
 	public void valueChanged(TreeSelectionEvent arg0) {
-		refrezcar(true,null);
+		refrezcar(true, null);
 	}
 
 }

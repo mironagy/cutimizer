@@ -8,24 +8,25 @@ import uniandes.cupi2.cutimizer.mundo.ItemSolucion;
 
 public interface IPatron 
 {
+	
 	/**
-	 * Todo patr梟 debe saber dibujarse en el lienzo
+	 * Todo patr贸n debe saber dibujarse en el lienzo
 	 * @param lienzo para dibujarse
 	 * @parama escala la escala de representacion usada pixl/cm
 	 */
 	public void dibujarse(Graphics2D lienzo, int escala);
-
+	
 	/**
-	 * Da la cantidad que hay de un item con medidas dadas en el patr梟
+	 * Da la cantidad que hay de un item con medidas dadas en el patr贸n
 	 * @param alto
 	 * @param ancho
 	 * @param espesor
-	 * @return la cantidad de dicho item en el patr梟
+	 * @return la cantidad de dicho item en el patr贸n
 	 */
 	int darCantidadItem(int alto, int ancho, int espesor);
 
 	/**
-	 * Da los items del patr梟
+	 * Da los items del patr贸n
 	 * @return los items
 	 */
 	public ArrayList<ItemSolucion> getItems();
@@ -36,19 +37,19 @@ public interface IPatron
 	 */
 	public double darPrecio();
 	/**
-	 * Da la descripci梟 del patr梟
-	 * @return la descripci梟 del patr梟
+	 * Da la descripci贸n del patr贸n
+	 * @return la descripci贸n del patr贸n
 	 */
 	public String darDescripcion();
 	
 	/**
-	 * Da las indicaciones de corte del patr梟
-	 * @return las indicaciones de c梞o cortar el patr梟
+	 * Da las indicaciones de corte del patr贸n
+	 * @return las indicaciones de c贸mo cortar el patr贸n
 	 */
 	public String darIndicacionesDeCorte();
 	
 	/**
-	 * Da la cantidad de patrones necesitados en la soluci梟
+	 * Da la cantidad de patrones necesitados en la soluci贸n
 	 * @return la cantidad de patrones
 	 */
 	public int darCantidad();
@@ -61,7 +62,7 @@ public interface IPatron
 
 
 	/**
-	 * Crea la iamgen del patron en la ruta especificada y con los par噈etros dados
+	 * Crea la iamgen del patron en la ruta especificada y con los par谩metros dados
 	 * @param ruta la ruta de la imagen
 	 * @param ancho el ancho de la imagen
 	 * @param alto el alto de la imagen 

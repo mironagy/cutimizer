@@ -41,10 +41,6 @@ public class PanelDibujoPatron extends JPanel {
 	 */
 	public static final int ESCALA = 3;
 
-	/**
-	 * El Graphics2D que se est� usando
-	 */
-
 	private static int largo;
 	private static int ancho;
 
@@ -60,11 +56,13 @@ public class PanelDibujoPatron extends JPanel {
 
 	}
 
-	public void refrezcar(Graphics2D lienzo) {
-		dibujarCuadrilla(lienzo);
-		dibujarContenedora(lienzo);
-	}
-
+	
+	/**
+	 * Da el pixel correspondiente al mm dado y la escala usada
+	 * @param mm el milimetro buscado
+	 * @param escala la escala usada
+	 * @return el pixel correspondiente.
+	 */
 	public static int darPixelCorrespondienteAlMM(int mm, int escala) {
 		return escala * mm / 10;
 	}
@@ -108,12 +106,13 @@ public class PanelDibujoPatron extends JPanel {
 	}
 
 	public static void dibujarCuadrilla(Graphics2D lienzo, int ancho, int alto) {
+			
 		Line2D.Double linea = null;
 		int cm10 = darPixelX(10);
 		int cm = 0;
 		lienzo.setColor(new Color(212, 212, 212));
 		lienzo.setFont(new Font("Arial", Font.PLAIN, 10));
-		// Dibujar la l�nea completa cada 10 cm
+		// Dibujar la línea completa cada 10 cm
 		for (int i = INICIO; i <= ancho - 10; i += cm10) {
 			linea = new Line2D.Double(i, 9, i, alto - 10);
 			lienzo.draw(linea);
@@ -134,7 +133,7 @@ public class PanelDibujoPatron extends JPanel {
 				INICIO_CUADRILLA, alto - 10);
 		lienzo.draw(linea);
 
-		// Dibuja la l�nea chica cada 10 cm
+		// Dibuja la línea chica cada 10 cm
 		for (int i = INICIO; i <= ancho - 10; i += cm10) {
 			linea = new Line2D.Double(i, 9, i, INICIO_CUADRILLA);
 			lienzo.draw(linea);
@@ -178,13 +177,13 @@ public class PanelDibujoPatron extends JPanel {
 	 * Dibuja la cuadrilla del plano
 	 */
 	public void dibujarCuadrilla(Graphics2D lienzo) {
-
+		
 		Line2D.Double linea = null;
 		int cm10 = darPixelX(10);
 		int cm = 0;
 		lienzo.setColor(new Color(212, 212, 212));
 		lienzo.setFont(new Font("Arial", Font.PLAIN, 10));
-		// Dibujar la l�nea completa cada 10 cm
+		// Dibujar la línea completa cada 10 cm
 		for (int i = INICIO; i <= getWidth() - 10; i += cm10) {
 			linea = new Line2D.Double(i, 9, i, getHeight() - 10);
 			lienzo.draw(linea);
@@ -205,7 +204,7 @@ public class PanelDibujoPatron extends JPanel {
 				INICIO_CUADRILLA, getHeight() - 10);
 		lienzo.draw(linea);
 
-		// Dibuja la l�nea chica cada 10 cm
+		// Dibuja la línea chica cada 10 cm
 		for (int i = INICIO; i <= getWidth() - 10; i += cm10) {
 			linea = new Line2D.Double(i, 9, i, INICIO_CUADRILLA);
 			lienzo.draw(linea);
@@ -271,7 +270,6 @@ public class PanelDibujoPatron extends JPanel {
 
 	/**
 	 * Da el lienzo que se está usando para dibujar
-	 * 
 	 * @return el lienzo
 	 */
 	public Graphics2D darLienzo() {
@@ -291,38 +289,20 @@ public class PanelDibujoPatron extends JPanel {
 	 */
 	public void dibujarPatronNoSeleccionado() {
 		Graphics2D g = (Graphics2D) getGraphics();
-
+		
+		g.setRenderingHint(
+		        RenderingHints.KEY_TEXT_ANTIALIASING,
+		        RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
+		
 		g.setFont(new Font("Arial", Font.PLAIN, 60));
 		g.drawString("Seleccione un patrón", getWidth() / 6, getHeight() / 2);
 
-	}
-
-	@Override
-	public void repaint()
-	{
-		if(getGraphics()!=null)
-			interfaz.refrezcar(false,null);
-		
-		revalidate();
-	}
-	
+	}	
 	
 	@Override
 	public void paint(Graphics g) {
 		if(getGraphics()!=null)
 			interfaz.refrezcar(false,(Graphics2D)g);
-		
-		revalidate();
-	}
-	
-	@Override
-	/**
-	 * Pinta el panel
-	 */
-	public void paintComponent(Graphics g) {
-
-		System.out.println("Sellamas");
-
 	}
 
 }
