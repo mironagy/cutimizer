@@ -60,9 +60,9 @@ public class PanelDibujoPatron extends JPanel {
 
 	}
 
-	public void refrezcar() {
-		dibujarCuadrilla();
-		dibujarContenedora();
+	public void refrezcar(Graphics2D lienzo) {
+		dibujarCuadrilla(lienzo);
+		dibujarContenedora(lienzo);
 	}
 
 	public static int darPixelCorrespondienteAlMM(int mm, int escala) {
@@ -98,8 +98,8 @@ public class PanelDibujoPatron extends JPanel {
 	/**
 	 * Dibuja la contenedora original
 	 */
-	public void dibujarContenedora() {
-		Graphics2D lienzo = (Graphics2D) getGraphics();
+	public void dibujarContenedora(Graphics2D lienzo) {
+
 		lienzo.setColor(Color.BLACK);
 		lienzo.setStroke(new BasicStroke(3));
 		Rectangle2D.Double rectangle = new Rectangle2D.Double(INICIO, INICIO,
@@ -177,8 +177,7 @@ public class PanelDibujoPatron extends JPanel {
 	/**
 	 * Dibuja la cuadrilla del plano
 	 */
-	public void dibujarCuadrilla() {
-		Graphics2D lienzo = (Graphics2D) getGraphics();
+	public void dibujarCuadrilla(Graphics2D lienzo) {
 
 		Line2D.Double linea = null;
 		int cm10 = darPixelX(10);
@@ -302,12 +301,18 @@ public class PanelDibujoPatron extends JPanel {
 	public void repaint()
 	{
 		if(getGraphics()!=null)
-			interfaz.refrezcar(true);
+			interfaz.refrezcar(false,null);
+		
+		revalidate();
 	}
 	
 	
 	@Override
 	public void paint(Graphics g) {
+		if(getGraphics()!=null)
+			interfaz.refrezcar(false,(Graphics2D)g);
+		
+		revalidate();
 	}
 	
 	@Override

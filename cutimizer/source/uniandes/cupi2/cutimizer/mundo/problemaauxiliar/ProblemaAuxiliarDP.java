@@ -517,7 +517,7 @@ public class ProblemaAuxiliarDP extends ProblemaAuxiliar {
 		else {
 			String direction = gullotine[x][y];
 			int cutPosition = position[x][y];
-			instructions += "instr Corte " + direction.toLowerCase() +  " en " + cutPosition + " mm de la l�mina " + P1.get(x) + "x"
+			instructions += "instr Corte " + direction.toLowerCase() +  " en " + cutPosition + " mm de la lámina " + P1.get(x) + "x"
 					+ Q1.get(y) + " mm" + '\n';
 
 			/**

@@ -39,7 +39,9 @@ public class InterfazSolucionConsola extends JFrame implements
 	private JSplitPane divisionHorizontal;
 
 	public InterfazSolucionConsola(Solucion nSolucion) {
+		
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
 		try {
 			// Set System L&F
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
@@ -130,8 +132,7 @@ public class InterfazSolucionConsola extends JFrame implements
 		validate();
 	}
 
-	public void refrezcar(boolean borrar) {
-		System.out.println("entra");
+	public void refrezcar(boolean borrar, Graphics2D lienzo) {
 		DefaultMutableTreeNode nodo = (DefaultMutableTreeNode) listaPatrones
 				.getLastSelectedPathComponent();
 		if (nodo == null)
@@ -141,9 +142,10 @@ public class InterfazSolucionConsola extends JFrame implements
 		if (nodo.isLeaf()) {
 			if(borrar)
 				panelDibujoPatron.borrar();
-			panelDibujoPatron.refrezcar();
-			Graphics2D lienzo = panelDibujoPatron.darLienzo();
+			if(lienzo == null)
+				lienzo = panelDibujoPatron.darLienzo();
 
+			panelDibujoPatron.refrezcar(lienzo);
 			IPatron patron = (IPatron) nodo.getUserObject();
 			patron.dibujarse(lienzo, PanelDibujoPatron.ESCALA);
 
@@ -161,7 +163,7 @@ public class InterfazSolucionConsola extends JFrame implements
 
 	@Override
 	public void valueChanged(TreeSelectionEvent arg0) {
-		refrezcar(true);
+		refrezcar(true,null);
 	}
 
 }
